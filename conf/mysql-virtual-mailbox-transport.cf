@@ -1,0 +1,5 @@
+user = postfixadmin
+password = {{ MYSQLPASSWORD }}
+hosts = {{ MYSQLHOST }}
+dbname = postfixadmin
+query = SELECT 'lmtp:{{ DOVECOTHOST }}:24' FROM domain WHERE domain='%s' and backupmx = 0 and active = 1

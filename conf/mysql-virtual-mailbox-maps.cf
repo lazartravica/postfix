@@ -1,0 +1,5 @@
+user = postfixadmin
+password = {{ MYSQLPASSWORD }}
+hosts = {{ MYSQLHOST }}
+dbname = postfixadmin
+query = SELECT maildir FROM mailbox WHERE username='%s' AND active = 1
